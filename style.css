@@ -1,0 +1,478 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+
+
+:root{
+    --red--light: hsl(356, 100%, 66%);
+    --red--hoover: hsl(355, 100%, 74%);
+    --white--text: hsl(0, 0%, 100%);
+    --background: #fafafa;
+    --text--footer: hsl(240, 2%, 79%);
+    --text--body: hsl(207, 13%, 34%);
+    --text--headings: hsl(208, 49%, 24%);
+    --footer-background: hsl(240, 10%, 16%);
+    --blue--gradient: linear-gradient(to right,#2E2F41, #3D4061);
+    --red--gradient: linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    --red--gradient--mobile: linear-gradient( hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    --padding--king: 9rem;
+}
+
+
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Overpass', sans-serif;
+    list-style: none;
+}
+
+
+body{
+    background-color: var(--background);
+    display: flex;
+    flex-direction: column;
+}
+.hero {
+    background-repeat: no-repeat;
+    background-image: url(./images/bg-pattern-intro-desktop.svg), var(--red--gradient);
+    background-size: 220%, auto;
+    background-position: 24% 51%, left;
+    display: flex;
+    flex-direction: column;
+    color: var(--white--text);
+    border-bottom-left-radius: 7rem;
+}
+
+.hero_header{
+    margin: auto;
+    display: flex;
+    max-width: 1440px;
+    width: 100%;
+    gap: 5rem;
+    padding: 3rem ;
+    padding-inline: var(--padding--king);
+    padding-bottom: 0;
+}
+
+.header_btns{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.header_left{
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    
+}
+
+.header_left .menu{
+    display: flex;
+    gap: 2rem;
+    font-weight: 600;
+    
+}
+
+.header_left a{
+    color: var(--white--text);
+}
+
+.header_right{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.button{
+    padding: .7rem 1.5rem;
+    border-radius: 30px;
+    color: var(--white--text);
+    font-weight: 600;
+}
+
+
+.white{
+    background-color: var(--white--text);
+    color: var(--red--light);
+}
+
+
+.hero_main{
+    margin: 0 auto;
+    padding: 6rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+
+h2{
+    font-size: 3rem;
+    margin-bottom: .7rem;
+}
+
+
+.text p{
+    text-align: center;
+    font-size: 1.15rem;
+}
+
+
+.buttons{
+    display: flex;
+    margin: 1.7rem auto;
+    gap: 1rem
+}
+
+
+.buttons .pink{
+    border: 1px solid var(--white--text);
+}
+
+.hero_header i{
+    font-size: 2.5rem;
+    line-height: 0;
+    margin: auto 0;
+    display: none;
+}
+
+
+
+
+/* editor */
+
+
+.editor{
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+    width: 100%;
+    margin: auto;
+    padding-inline: var(--padding--king);
+    padding-top: 9rem;
+    padding-bottom: 16rem;
+    background-image: url(./images/illustration-editor-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 58% ;
+    background-position: 118% ;
+}
+.editor_main{
+    display: flex;
+    margin: auto;
+    width: 100%;
+}
+
+.editor_text, .laptop_text{
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+    width: 45%;
+}
+
+.editor > h4{
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 4rem;
+    color: var(--text--headings);
+}
+
+.editor_text h5, .laptop_text h5{
+    font-size: 1.3rem;
+    color: var(--text--headings);
+    margin-bottom: 1.5rem;
+}
+
+.editor_text p, .laptop_text p{
+    color: var(--text--body);
+}
+
+.editor_img, .laptop_img{
+    width: 55%;
+    position: relative;
+    
+}
+
+.editor_img img{
+    width: 140%;
+    position: absolute;
+    top: -50%;
+    left: 24%;
+}
+
+.iphone{
+    /* margin-top: 16rem; */
+    display: flex;
+    background-repeat: no-repeat;
+    background-image: url(./images/bg-pattern-circles.svg), var(--blue--gradient);
+    background-size: 70%, auto;
+    background-position: -52% 80%, left;
+    color: var(--white--text);
+    border-bottom-left-radius: 5rem;
+    border-top-right-radius: 5rem;
+}
+
+.iphone_main{
+    display: flex;
+    max-width: 1440px;
+    margin: auto;
+    padding: 6rem 9rem 6rem 6.2rem;
+}
+
+.cellphone{
+    position: relative;
+    width: 50%;
+}
+
+.cellphone img{
+    position: absolute;
+    width: 80%;
+    top:-125%;
+}
+
+.iphone_text{
+    width: 50%;
+}
+.iphone_text h4{
+    color: var(--white--text);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.iphone_text p{
+    color: var(--white--text);
+}
+
+
+.laptop{
+    display: flex;
+    max-width: 1440px;
+    width: 100%;
+    margin: auto;
+    padding: 16rem 9rem;
+    background-image: url(./images/illustration-laptop-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 58% ;
+    background-position: -20% ;
+}
+.laptop_main{
+    display: flex;
+    width: 100%;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--footer-background);
+    gap: 3.5rem;
+    border-top-right-radius: 5rem;
+    color: var(--white--text);
+    font-family: 'Ubuntu', sans-serif;
+    padding-bottom: 1.5rem;
+}
+
+.footer_main{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    gap: 3rem;
+    max-width: 1440px;
+    padding: 3.5rem 22rem 0 9rem;
+    justify-content: space-between;
+}
+
+.footer .title{
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.footer .subtitles{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.footer_text a, .attribution {
+    font-size: .9rem;
+    color: var(--text--footer);
+}
+
+.attribution, .attribution a{
+    text-align: center;
+    color: var(--text--footer);
+}
+
+
+
+
+
+
+
+@media  (max-width: 375px){
+    .hero {
+        background-repeat: no-repeat;
+        background-image: url(./images/bg-pattern-intro-mobile.svg), var(--red--gradient--mobile);
+        background-size: 350%, auto;
+        background-position: 33% 35%, left;
+        display: flex;
+        flex-direction: column;
+        color: var(--white--text);
+        border-bottom-left-radius: 7rem;
+    }
+    
+    .hero_header{
+        padding-inline: 1.8rem;
+        justify-content: space-between;
+    }
+
+    .hero_header i{
+        display: block;
+    }
+
+    .header_btns{
+        display: none;
+    }
+
+    .hero_main{
+        padding: 6rem 3rem;
+    }
+    
+    .text h2{
+        text-align: center;
+        font-size: 1.8rem;
+        line-height: 2.3rem;
+        margin-bottom: 1rem;
+    }
+
+    .text p{
+        font-size: 1rem;
+    }
+    
+    .button{
+        padding: 0.7rem 1rem;
+    }
+    .buttons{
+        margin: 2.8rem auto;
+    }
+
+
+    .editor{
+        padding: 9rem 3rem;
+        background-image: none;
+        position: static;
+    }
+    
+    .editor_main{
+        flex-direction: column;
+        padding-inline: 1rem;
+        position: relative;
+    }
+    
+    .editor_text, .laptop_text{
+        gap: 3rem;
+        width: 100%;
+        text-align: center;
+        order: 2;
+    }
+    
+    .editor > h4{
+        padding-bottom: 2rem;
+        font-size: 1.6rem;
+    }
+    
+    .editor_text h5, .laptop_text h5{
+        padding-inline: 1rem;
+    }
+    
+    .editor_img{
+        order: 1;
+        width: 100%;
+        background-image: url(./images/illustration-editor-mobile.svg) ;
+        background-repeat: no-repeat;
+        background-size: cover ;
+        background-position: center center ;
+        position: static;
+        height: 250px;
+        margin-bottom: 2rem;
+    }
+    
+    
+    
+    
+    .iphone{
+        margin-top: 5rem;
+        background-size: 150%, auto;
+        background-position: center -300%, left;
+    }
+    
+    .iphone_main{
+        flex-direction: column;
+        padding: 14rem 3rem 8rem 3rem;
+    }
+    
+    .cellphone{
+        position: relative;
+        width: 100%;
+        background-color: aqua;
+    }
+
+    .cellphone img{
+        width: 130%;
+        top: -24rem;
+        right: -2.37rem;
+
+
+    }
+    
+    .iphone_text{
+        width: 100%;
+    }
+
+    .iphone_text h4, .iphone_text p{
+        text-align: center;
+    }
+
+
+
+
+
+
+
+
+    
+    .laptop{
+        padding: 4rem 3rem;
+        background-image: none;
+        position: static;
+    }
+
+    .laptop_main{
+        flex-direction: column;
+        padding-inline: 1rem;
+    }
+    
+    .laptop_img{
+        width: 100%;
+        background-image: url(./images/illustration-laptop-mobile.svg) ;
+        order: 1;
+        background-repeat: no-repeat;
+        background-size: cover ;
+        background-position: center center ;
+        position: static;
+        height: 250px;
+        margin-bottom: 2rem;
+    }
+    
+    .footer{
+        text-align: center;
+    }
+    
+    .footer_main{
+        flex-direction: column;
+        padding: 3.5rem 3rem 1rem 3rem;
+    }
+    
+    .attribution{
+        display: none;
+    }
+}
