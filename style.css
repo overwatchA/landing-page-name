@@ -277,7 +277,7 @@ h2{
     display: flex;
     gap: 3rem;
     max-width: 1440px;
-    padding: 3.5rem 22rem 0 9rem;
+    padding: 3.5rem 9rem 0 9rem;
     justify-content: space-between;
 }
 
@@ -308,7 +308,7 @@ h2{
 
 
 
-@media  (max-width: 375px){
+@media  (max-width: 450px){
     .hero {
         background-repeat: no-repeat;
         background-image: url(./images/bg-pattern-intro-mobile.svg), var(--red--gradient--mobile);
@@ -349,8 +349,9 @@ h2{
     }
     
     .button{
-        padding: 0.7rem 1rem;
-    }
+        padding: 0.7rem 0.8rem;
+        text-align: center;
+        }
     .buttons{
         margin: 2.8rem auto;
     }
@@ -470,6 +471,10 @@ h2{
     .footer_main{
         flex-direction: column;
         padding: 3.5rem 3rem 1rem 3rem;
+    }
+
+    .nule{
+        display: none;
     }
     
     .attribution{
